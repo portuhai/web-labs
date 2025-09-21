@@ -1,0 +1,48 @@
+.top_part_footer {
+    display: flex;
+}
+
+.copyrights_text {
+    color: #838383;
+    font-size: 1rem;
+    font-family: Mulish;
+    font-weight: 300;
+    line-height:28px;
+    max-width:391px;
+}
+
+hr {
+     border: none;
+     border-top: 0.6px solid #C4C4C4;
+     margin: 0 150px 0 150px;
+}
+
+footer {
+    background-color: #F8F8F8;
+    width: 100%;
+    padding-top: 31px;
+    padding-bottom: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.social_media {
+    display: flex;
+    margin: 0 auto;
+    width: 15.5rem;
+    margin-top: 30px;
+    gap: 2.1rem;
+}
+
+.logo_footer {
+    margin-left: 10%;
+}
+
+.copyrights {
+    margin-right: 5%;
+}
+
+.top_part_footer {
+    width: 100%;
+    gap: 50vw;
+}

@@ -14,13 +14,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <title>Lab1</title>
   <link rel="stylesheet" type="text/css" href="globals.css">
-  <style></style>
-  <script></script>
+  <link rel="stylesheet" type="text/css" href="section1.css">
+  <link rel="stylesheet" type="text/css" href="section2.css">
+  <link rel="stylesheet" type="text/css" href="section3.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <script src="animate.js" defer></script>
  </head>
  <body>
   <section class="main">
    <div class="container_1">
     <header class="header">
+     <div class="header_logo">
+      <svg class="logo_box"  width="44" height="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+       <circle class="outer_logo_circle" cx="50" cy="50" r="46"></circle>
+       <circle class="middle_logo_circle" cx="50" cy="50" r="22"></circle>
+       <circle class="inner_logo_circle" cx="50" cy="50" r="16"></circle>
+      </svg>
+     </div>
+     <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="burger">
+       <span></span>
+       <span></span>
+       <span></span>
+      </label>
      <nav class="header_nav">
       <ul>
        <li class="header_nav-home"><a href="">Home</a></li>
@@ -29,13 +45,6 @@
        <li class="header_nav-item"><a href="">Partner</a></li>
       </ul>
      </nav>
-     <div class="header_logo">
-      <svg class="logo_box"  width="44" height="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-       <circle class="outer_logo_circle" cx="50" cy="50" r="46"></circle>
-       <circle class="middle_logo_circle" cx="50" cy="50" r="22"></circle>
-       <circle class="inner_logo_circle" cx="50" cy="50" r="16"></circle>
-      </svg>
-     </div>
      <div class="registration_box">
       <button class="login"><a class="register_buttons">Login</a></button>
       <button class="register"><a class="register_buttons">Register</a></button>
@@ -68,7 +77,7 @@
      <h2 class="name">Edward Newgate</h2>
      <h3 class="founder_circle">Founder Circle</h3>
     </div>
-    <img class="photo_founder" src="images\image 6.png" alt="Photo of founder" width="384" height="491">
+    <img class="photo_founder" src="images\image 6.png" alt="Photo of founder">
    </div>
   </section>
   <section class="section3">
@@ -81,7 +90,7 @@
    </div>
    <div class="blog">
     <div class="blog1">
-     <img class="blog_photo" src="images\image 12.png" alt="Relax" width="261" height="231">
+     <img class="blog_photo" src="images\image 12.png" alt="Relax">
      <p class="article_name">The many benefits of
 taking a healing holiday</p>
      <p class="blog_text">‘Helaing holidays’ are on the rise
@@ -89,7 +98,7 @@ tohelp maximise your health and happines...</p>
      <a class="read_more_btn" href="">Read more</a>
     </div>
     <div class="blog2">
-     <img class="blog_photo" src="images\image 13.png" alt="Tasty Food" width="261" height="231">
+     <img class="blog_photo" src="images\image 13.png" alt="Tasty Food">
      <p class="article_name">The best Kyoto restaurant
 to try Japanese food</p>
      <p class="blog_text">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
@@ -97,7 +106,7 @@ to visit...</p>
      <a class="read_more_btn" href="">Read more</a>
     </div>
     <div class="blog3">
-     <img class="blog_photo" src="images\image 14.png" alt="Sight seeing" width="261" height="231">
+     <img class="blog_photo" src="images\image 14.png" alt="Sight seeing">
      <p class="article_name">Skip Chichen Itza and head
 to this remote Yucatan</p>
      <p class="blog_text">It’s remote and challenging to get,
@@ -106,7 +115,7 @@ these ruins without the...</p>
      <a class="read_more_btn" href="">Read more</a>
     </div>
     <div class="blog4">
-     <img class="blog_photo" src="images\image 15.png" alt="Surfing" width="261" height="231">
+     <img class="blog_photo" src="images\image 15.png" alt="Surfing">
      <p class="article_name">Surf’s up at these beginner
 spots around the world</p>
      <p class="blog_text">If learning to surf has in on your to-

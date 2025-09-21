@@ -1,0 +1,73 @@
+.section_2 {
+    background-color: #F8F8F8;
+    padding: 6rem;
+    margin-top: 116px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.text_part_testimonials {
+    padding: 8% 12% 12% 8%;
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.Testimonials {
+    color: #000000;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: Playfair Display;
+    line-height: 6vw;
+    max-width: 481px;
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.stars {
+    display: flex;
+    margin-top: 15%;
+    gap: 7px;
+    animation: bounce 2s infinite;
+}
+
+.testimonials_content {
+    display: flex;
+    gap: 5%;
+}
+
+
+.testimonials_descr {
+    color: #000000;
+    font-size: 1.5rem;
+    font-family: Mulish;
+    line-height: 2.4rem;
+    max-width: 550px;
+}
+
+.name {
+    color: #000000;
+    font-size: 1.3rem;
+    font-family: Inter;
+    line-height: 2.3rem;
+    max-width: 183px;
+    font-weight: 700;
+    margin-top: 10%;
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.founder_circle {
+    color:rgba (0, 0, 0, 0.85);
+    font-size: 1.1rem;
+    font-family: Inter;
+    line-height: 1.1rem;
+    max-width: 124px;
+    font-weight: 400;
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.photo_founder {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin: 15% 30% 5% 0%;
+    animation: fadeUp 1s ease-out forwards;
+}
