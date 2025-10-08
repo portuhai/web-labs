@@ -20,6 +20,7 @@ h1 {
   margin-bottom: 25px;
 }
 
+/* ===== Форма ===== */
 form {
   display: flex;
   gap: 10px;
@@ -49,6 +50,40 @@ form button:hover {
   background-color: #3f8ea6;
 }
 
+/* ===== Пошук і сортування ===== */
+input[type="text"][placeholder*="Search"] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+input[type="text"][placeholder*="Search"]:focus {
+  border-color: #4eb5d4;
+  box-shadow: 0 0 5px rgba(78, 181, 212, 0.5);
+  outline: none;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin-bottom: 25px;
+  background-color: #f1f3f6;
+  transition: 0.2s;
+}
+
+select:hover {
+  border-color: #4eb5d4;
+}
+
+/* ===== Блоки статей ===== */
 .articles-grid {
   display: flex;
   flex-wrap: wrap;
@@ -57,13 +92,13 @@ form button:hover {
 }
 
 .article {
-  flex: 1 1 calc(33.333% - 20px); /* 3 в ряд */
+  flex: 1 1 calc(33.333% - 20px);
   min-width: 250px;
   background-color: #f1f3f6;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.3s;
+  transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,8 +121,10 @@ form button:hover {
   font-size: 15px;
   color: #555;
   margin-bottom: 15px;
+  line-height: 1.4;
 }
 
+/* ===== Кнопки дій ===== */
 .actions {
   display: flex;
   justify-content: space-between;
@@ -120,4 +157,17 @@ form button:hover {
 
 .actions button:last-child:hover {
   background-color: #b02a37;
+}
+
+/* ===== Підрахунок суми ===== */
+.container > div:last-child {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #f1f3f6;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
 }
