@@ -1,0 +1,41 @@
+.catalog {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.catalog-title {
+  font-size: 30px;
+  color: #d63384;
+}
+
+.search {
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffb3c7;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.filters select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid #ffb3c7;
+  background: #fff5f8;
+}
+
+.catalog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}

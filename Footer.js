@@ -1,11 +1,18 @@
 import React from "react";
 
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="footer">
-      <p>© 2025 PinkPress. All rights reserved.</p>
+    <footer
+      style={{
+        marginTop: "40px",
+        background: "#ffb3c6",
+        padding: "15px",
+        textAlign: "center",
+        color: "white",
+        fontSize: "16px",
+      }}
+    >
+      © 2025 PinkPress Blog
     </footer>
   );
 }
-
-export default Footer;

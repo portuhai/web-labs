@@ -1,14 +1,17 @@
-import React from "react";
+import "./ArticleCard.css";
 
-function ArticleCard({ title, image, summary }) {
+export default function ArticleCard({ item }) {
   return (
-    <div className="article-card">
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{summary}</p>
-      <button>Read More</button>
+    <div className="card">
+      <img
+        src={item.image}
+        alt={item.title}
+        className="card-img"
+      />
+      <h3 className="card-title">{item.title}</h3>
+      <p className="card-text">{item.description}</p>
+
+      <button className="card-btn">View more</button>
     </div>
   );
 }
-
-export default ArticleCard;

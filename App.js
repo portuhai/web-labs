@@ -1,20 +1,28 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
-import ArticleList from "./components/ArticleList";
 import Footer from "./components/Footer";
-import "./App.css";
+import Home from "./pages/Home";
+import Catalog from "./pages/Catalog";
+import ItemPage from "./pages/ItemPage";
+import { ItemProvider } from './context/ItemsContext';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <NavBar />
-      <main className="content">
-        <ArticleList />
-      </main>
-      <Footer />
-    </div>
+    <ItemProvider>
+      <Router>
+        <Header />
+        <NavBar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/item/:id" element={<ItemPage />} />
+        </Routes>
+
+        <Footer />
+      </Router>
+    </ItemProvider>
   );
 }
 

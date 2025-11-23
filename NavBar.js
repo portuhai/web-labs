@@ -1,16 +1,17 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-function NavBar() {
+export default function NavBar() {
   return (
-    <nav className="navbar">
-      <ul>
-        <li>Home</li>
-        <li>Articles</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+    <nav style={{
+      display: "flex",
+      gap: "30px",
+      justifyContent: "center",
+      padding: "20px",
+      background: "#fff",
+      boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
+    }}>
+      <Link to="/">Home</Link>
+      <Link to="/catalog">Catalog</Link>
     </nav>
   );
 }
-
-export default NavBar;
