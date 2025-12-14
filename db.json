@@ -2,143 +2,183 @@
   "items": [
     {
       "id": 1,
-      "title": "Minimalist Workspace Setup",
-      "category": "Tech",
-      "price": 129,
-      "image": "https://picsum.photos/400?random=1"
+      "title": "How to Find Inspiration in Small Things",
+      "description": "Learn how to stay creative every day with simple habits.",
+      "fullText": "Inspiration doesn’t always come from big moments. Often it hides in small details of daily life...",
+      "category": "Lifestyle",
+      "price": 199,
+      "image": "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=800"
     },
     {
       "id": 2,
-      "title": "How to Stay Productive All Day",
-      "category": "Lifestyle",
-      "price": 59,
-      "image": "https://picsum.photos/400?random=2"
+      "title": "Writing That Heals the Soul",
+      "description": "How journaling can transform your mood and mindset.",
+      "fullText": "Writing is one of the most powerful tools for emotional healing...",
+      "category": "Mental Health",
+      "price": 249,
+      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800"
     },
     {
       "id": 3,
-      "title": "Top 10 JavaScript Tips",
-      "category": "Programming",
-      "price": 39,
-      "image": "https://picsum.photos/400?random=3"
+      "title": "5 Cozy Morning Rituals",
+      "description": "Start your day right with mindfulness and warmth.",
+      "fullText": "Morning rituals set the tone for the entire day...",
+      "category": "Lifestyle",
+      "price": 149,
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800"
     },
     {
       "id": 4,
-      "title": "Healthy Meals in 15 Minutes",
-      "category": "Food",
-      "price": 45,
-      "image": "https://picsum.photos/400?random=4"
+      "title": "The Art of Slow Living",
+      "description": "Why slowing down can improve your quality of life.",
+      "fullText": "Slow living is about being present and intentional...",
+      "category": "Lifestyle",
+      "price": 219,
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
     },
     {
       "id": 5,
-      "title": "Best Budget Laptops 2025",
-      "category": "Tech",
-      "price": 149,
-      "image": "https://picsum.photos/400?random=5"
+      "title": "Managing Anxiety in a Digital World",
+      "description": "Practical tips to stay calm in the age of notifications.",
+      "fullText": "Modern life constantly demands our attention...",
+      "category": "Mental Health",
+      "price": 269,
+      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800"
     },
     {
       "id": 6,
-      "title": "Designer’s Guide to Color Theory",
-      "category": "Design",
-      "price": 99,
-      "image": "https://picsum.photos/400?random=6"
+      "title": "Creative Burnout: How to Recover",
+      "description": "Recognize burnout and rediscover creativity.",
+      "fullText": "Creative burnout can happen to anyone...",
+      "category": "Creativity",
+      "price": 189,
+      "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800"
     },
     {
       "id": 7,
-      "title": "How to Improve Your Sleep",
-      "category": "Lifestyle",
-      "price": 29,
-      "image": "https://picsum.photos/400?random=7"
+      "title": "Building a Daily Writing Habit",
+      "description": "Small steps to write consistently.",
+      "fullText": "Writing daily doesn’t require hours of free time...",
+      "category": "Creativity",
+      "price": 179,
+      "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800"
     },
     {
       "id": 8,
-      "title": "React Hooks Explained",
-      "category": "Programming",
-      "price": 79,
-      "image": "https://picsum.photos/400?random=8"
+      "title": "Mindfulness for Busy People",
+      "description": "Simple mindfulness techniques for hectic days.",
+      "fullText": "You don’t need a silent retreat to practice mindfulness...",
+      "category": "Mental Health",
+      "price": 229,
+      "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800"
     },
     {
       "id": 9,
-      "title": "Street Food Adventures",
-      "category": "Food",
-      "price": 55,
-      "image": "https://picsum.photos/400?random=9"
+      "title": "Minimalism: Less Stuff, More Life",
+      "description": "How decluttering can improve mental clarity.",
+      "fullText": "Minimalism isn’t about owning nothing...",
+      "category": "Lifestyle",
+      "price": 199,
+      "image": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=800"
     },
     {
       "id": 10,
-      "title": "Modern Logo Inspiration",
-      "category": "Design",
-      "price": 89,
-      "image": "https://picsum.photos/400?random=10"
+      "title": "Finding Your Creative Voice",
+      "description": "Discover what makes your writing unique.",
+      "fullText": "Every writer has a unique voice...",
+      "category": "Creativity",
+      "price": 259,
+      "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800"
     },
     {
       "id": 11,
-      "title": "Gadget Trends in 2025",
-      "category": "Tech",
-      "price": 119,
-      "image": "https://picsum.photos/400?random=11"
+      "title": "Emotional Intelligence Basics",
+      "description": "Understand emotions better — yours and others’.",
+      "fullText": "Emotional intelligence helps build stronger relationships...",
+      "category": "Mental Health",
+      "price": 239,
+      "image": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=800"
     },
     {
       "id": 12,
-      "title": "Daily Habits for Better Focus",
+      "title": "The Power of Silence",
+      "description": "Why silence is essential for mental clarity.",
+      "fullText": "In a noisy world, silence becomes a luxury...",
       "category": "Lifestyle",
-      "price": 39,
-      "image": "https://picsum.photos/400?random=12"
+      "price": 169,
+      "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800"
     },
     {
       "id": 13,
-      "title": "Mastering CSS Grid",
-      "category": "Programming",
-      "price": 89,
-      "image": "https://picsum.photos/400?random=13"
+      "title": "Creative Thinking Exercises",
+      "description": "Train your brain to think differently.",
+      "fullText": "Creativity is a skill that can be trained...",
+      "category": "Creativity",
+      "price": 199,
+      "image": "https://images.unsplash.com/photo-1508780709619-79562169bc64?w=800"
     },
     {
       "id": 14,
-      "title": "The Art of Plating Food",
-      "category": "Food",
-      "price": 75,
-      "image": "https://picsum.photos/400?random=14"
+      "title": "Healthy Digital Boundaries",
+      "description": "Learn when to disconnect.",
+      "fullText": "Setting digital boundaries protects your mental health...",
+      "category": "Mental Health",
+      "price": 209,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800"
     },
     {
       "id": 15,
-      "title": "Creative Poster Designs",
-      "category": "Design",
-      "price": 59,
-      "image": "https://picsum.photos/400?random=15"
+      "title": "Living with Intention",
+      "description": "Align your actions with your values.",
+      "fullText": "Intentional living starts with awareness...",
+      "category": "Lifestyle",
+      "price": 189,
+      "image": "https://images.unsplash.com/photo-1500534314209-a26db0f5b2aa?w=800"
     },
     {
       "id": 16,
-      "title": "Top 5 Wireless Headphones",
-      "category": "Tech",
-      "price": 199,
-      "image": "https://picsum.photos/400?random=16"
+      "title": "Overcoming Self-Doubt",
+      "description": "Break free from negative inner dialogue.",
+      "fullText": "Self-doubt is one of the biggest obstacles...",
+      "category": "Mental Health",
+      "price": 259,
+      "image": "https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=800"
     },
     {
       "id": 17,
-      "title": "Small Habits Big Results",
-      "category": "Lifestyle",
-      "price": 34,
-      "image": "https://picsum.photos/400?random=17"
+      "title": "Creative Routines of Famous Writers",
+      "description": "Learn from the habits of great minds.",
+      "fullText": "Many famous writers followed strict routines...",
+      "category": "Creativity",
+      "price": 279,
+      "image": "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800"
     },
     {
       "id": 18,
-      "title": "Node.js for Beginners",
-      "category": "Programming",
-      "price": 49,
-      "image": "https://picsum.photos/400?random=18"
+      "title": "The Science of Happiness",
+      "description": "What research says about happiness.",
+      "fullText": "Happiness is influenced by habits and mindset...",
+      "category": "Mental Health",
+      "price": 299,
+      "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800"
     },
     {
       "id": 19,
-      "title": "International Desserts",
-      "category": "Food",
-      "price": 65,
-      "image": "https://picsum.photos/400?random=19"
+      "title": "Simple Habits That Change Your Life",
+      "description": "Tiny changes with big impact.",
+      "fullText": "Small habits practiced daily can reshape your life...",
+      "category": "Lifestyle",
+      "price": 179,
+      "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800"
     },
     {
       "id": 20,
-      "title": "Typography Rules Designers Forget",
-      "category": "Design",
-      "price": 79,
-      "image": "https://picsum.photos/400?random=20"
+      "title": "Unlocking Your Inner Creativity",
+      "description": "Everyone is creative — here’s how to prove it.",
+      "fullText": "Creativity isn’t a talent reserved for a few...",
+      "category": "Creativity",
+      "price": 269,
+      "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800"
     }
   ]
 }

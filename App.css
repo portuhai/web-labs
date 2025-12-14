@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffeef5;
+  color: #4a4a4a;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #ffb6c1, #ffd6e0);
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.navbar {
+  background-color: #fff0f5;
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 4px rgba(255, 182, 193, 0.3);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #d63384;
+  transition: color 0.3s;
+}
+
+.navbar li:hover {
+  color: #ff69b4;
+}
+
+.articles {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.article-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.3);
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.article-card h3 {
+  color: #d63384;
+  margin-top: 1rem;
+}
+
+.article-card button {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.article-card button:hover {
+  background-color: #ff69b4;
+}
+
+.footer {
+  background-color: #fff0f5;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #d63384;
+  border-top: 1px solid #ffcce0;
+}
