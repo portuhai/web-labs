@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Bar Controller</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #121212; color: #e0e0e0; text-align: center; margin: 0; padding: 20px; }
+        h1 { color: #00adb5; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .card { background: #1e1e1e; padding: 20px; border-radius: 12px; border: 1px solid #333; }
+        .card:hover { border-color: #00adb5; }
+        .btn { background: #00adb5; color: #fff; border: none; padding: 12px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; }
+        .btn:hover { background: #007a80; }
+        .log-section { background: #1e1e1e; padding: 20px; border-radius: 12px; text-align: left; border: 1px solid #333; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #333; }
+        .badge { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+        .badge-web { background: #28a745; color: #fff; }
+        .badge-enc { background: #ffc107; color: #000; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Bar</h1>
+        <p style="color:#888;">Order Wi-Fi ESP32 (LittleFS)</p>
+        <div class="grid" id="cocktails-grid"></div>
+        <div class="log-section">
+            <h2>Log</h2>
+            <table>
+                <thead>
+                    <tr><th>ID</th><th>Cocktail</th><th>Source</th><th>Time</th></tr>
+                </thead>
+                <tbody id="log-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function loadMenu() {
+            fetch('/get-menu').then(r => r.json()).then(data => {
+                const grid = document.getElementById('cocktails-grid');
+                grid.innerHTML = '';
+                data.forEach(item => {
+                    grid.innerHTML += `
+                        <div class="card">
+                            <h3>${item.name}</h3>
+                            <p style="color:#aaa; min-height:40px;">${item.description}</p>
+                            <button class="btn" onclick="orderCocktail(${item.id})">Order</button>
+                        </div>`;
+                });
+            });
+        }
+        function orderCocktail(id) {
+            fetch(`/order?id=${id}`).then(r => r.text()).then(msg => { alert(msg); loadLogs(); });
+        }
+        function loadLogs() {
+            fetch('/get-logs').then(r => r.json()).then(data => {
+                const tbody = document.getElementById('log-table-body');
+                tbody.innerHTML = '';
+                if(data.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#555;">Nothing yet</td></tr>';
+                    return;
+                }
+                data.forEach(log => {
+                    const cls = log.source === 'Web' ? 'badge-web' : 'badge-enc';
+                    tbody.innerHTML += `
+                        <tr>
+                            <td>#${log.order_id}</td>
+                            <td>${log.cocktail_name}</td>
+                            <td><span class="badge ${cls}">${log.source}</span></td>
+                            <td>${(log.timestamp / 1000).toFixed(1)} s</td>
+                        </tr>`;
+                });
+            });
+        }
+        loadMenu(); loadLogs(); setInterval(loadLogs, 4000);
+    </script>
+</body>
+</html>
